@@ -1,0 +1,114 @@
+/* Ali EL MAGRI — portfolio
+   Palette : câble réseau (bleu), voyants de port (vert / orange) sur fond clair. */
+:root {
+  --bg: #FFFFFF;
+  --surface: #F2F4F7;
+  --ink: #16202C;
+  --muted: #5B6675;
+  --line: #D9DEE5;
+  --cable: #1F6FB2;
+  --cable-dark: #17558A;
+  --led-on: #2BA24C;
+  --led-wip: #E3A008;
+  --head: "IBM Plex Sans Condensed", "Arial Narrow", sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", Consolas, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { font-family: var(--body); font-size: 16px; line-height: 1.6; color: var(--ink); background: var(--bg); }
+a { color: var(--cable); text-underline-offset: 3px; }
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--cable); outline-offset: 3px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+
+/* Navigation */
+.nav { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.brand { font-family: var(--head); font-weight: 600; font-size: 20px; color: var(--ink); text-decoration: none; }
+.nav nav { display: flex; gap: 28px; }
+.nav nav a { color: var(--muted); text-decoration: none; font-size: 15px; }
+.nav nav a:hover { color: var(--ink); }
+
+/* Accueil */
+.hero { padding: 72px 0 56px; border-bottom: 1px solid var(--line); }
+.hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 56px; align-items: center; }
+.hero h1 { font-family: var(--head); font-weight: 600; font-size: clamp(48px, 6.4vw, 84px); line-height: .95; letter-spacing: -1.5px; }
+.hero .role { font-size: 19px; color: var(--muted); margin: 18px 0 22px; max-width: 30ch; line-height: 1.45; }
+.hero .pitch { max-width: 52ch; }
+.buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.btn { display: inline-block; padding: 12px 22px; font-size: 15px; font-weight: 500; text-decoration: none; border-radius: 3px; border: 1.5px solid var(--ink); color: var(--ink); }
+.btn.primary { background: var(--cable); border-color: var(--cable); color: #fff; }
+.btn.primary:hover { background: var(--cable-dark); border-color: var(--cable-dark); }
+.btn:hover { background: var(--surface); }
+
+/* Schéma du parcours */
+.topo { width: 100%; height: auto; }
+.topo .link { fill: none; stroke: var(--cable); stroke-width: 3; stroke-linecap: round; }
+.topo .link.pending { stroke: var(--led-wip); stroke-dasharray: 6 8; }
+.topo .node rect { fill: #fff; stroke: var(--ink); stroke-width: 1.6; }
+.topo .node.next rect { stroke: var(--led-wip); stroke-dasharray: 5 5; }
+.topo .node .t1 { font-family: var(--head); font-weight: 600; font-size: 17px; fill: var(--ink); }
+.topo .node .t2 { font-family: var(--body); font-size: 13px; fill: var(--muted); }
+.topo .led { stroke: #fff; stroke-width: 2; }
+.topo .draw { stroke-dasharray: 600; stroke-dashoffset: 600; animation: draw 1.4s ease-out forwards; }
+.topo .draw.d2 { animation-delay: .5s; }
+.topo .draw.d3 { animation-delay: 1s; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .topo .draw { animation: none; stroke-dashoffset: 0; } }
+.topo-caption { font-size: 14px; color: var(--muted); margin-top: 10px; }
+
+/* Sections */
+section.block { padding: 80px 0; border-bottom: 1px solid var(--line); }
+h2 { font-family: var(--head); font-weight: 600; font-size: 40px; letter-spacing: -.5px; line-height: 1.1; margin-bottom: 12px; }
+.lead { color: var(--muted); max-width: 60ch; margin-bottom: 40px; }
+
+/* Lignes (expériences, projets, formation) */
+.row { display: grid; grid-template-columns: 300px 1fr; gap: 40px; padding: 28px 0; border-top: 1px solid var(--line); }
+.row:last-child { border-bottom: 1px solid var(--line); }
+.row h3 { font-family: var(--head); font-weight: 600; font-size: 22px; line-height: 1.2; }
+.row .meta { color: var(--muted); font-size: 15px; margin-top: 6px; }
+.row ul { padding-left: 18px; }
+.row li { margin-bottom: 6px; max-width: 70ch; }
+.row li::marker { color: var(--cable); }
+.row p { max-width: 70ch; }
+.tools { color: var(--muted); font-size: 15px; margin-top: 12px; }
+.tools b { color: var(--ink); font-weight: 500; }
+.doc { display: inline-block; margin-top: 14px; font-weight: 500; }
+
+.status { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); margin-top: 10px; }
+.status::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--led-on); box-shadow: 0 0 0 3px rgba(43,162,76,.18); }
+.status.wip::before { background: var(--led-wip); box-shadow: 0 0 0 3px rgba(227,160,8,.2); }
+
+.sub { margin-top: 64px; font-size: 28px; }
+.compact .row { padding: 18px 0; }
+.compact .row h3 { font-size: 19px; }
+
+/* Compétences et certifications */
+.skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 56px; }
+.skills dl { padding: 18px 0; border-top: 1px solid var(--line); }
+.skills dt { font-family: var(--head); font-weight: 600; font-size: 19px; margin-bottom: 4px; }
+.skills dd { color: var(--muted); }
+
+.cert-top { display: grid; grid-template-columns: 300px 1fr; gap: 40px; padding: 28px 0; border-top: 2px solid var(--ink); }
+.cert-top h3 { font-family: var(--head); font-weight: 600; font-size: 26px; }
+.cert-list { columns: 2; column-gap: 56px; padding: 20px 0 0 18px; border-top: 1px solid var(--line); }
+.cert-list li { margin-bottom: 8px; break-inside: avoid; }
+.cert-list li::marker { color: var(--cable); }
+
+/* Contact */
+.contact { padding: 88px 0; background: var(--surface); }
+.contact h2 { font-size: 48px; }
+.contact p { max-width: 56ch; color: var(--muted); }
+.contact .mail { font-family: var(--head); font-size: 28px; font-weight: 500; display: inline-block; margin-top: 18px; }
+footer { padding: 22px 0; font-size: 14px; color: var(--muted); background: var(--surface); border-top: 1px solid var(--line); }
+
+/* Mobile */
+@media (max-width: 860px) {
+  .nav nav { display: none; }
+  .hero { padding: 44px 0; }
+  .hero-grid, .row, .cert-top, .skills { grid-template-columns: 1fr; gap: 16px; }
+  .cert-list { columns: 1; }
+  h2 { font-size: 32px; }
+  section.block { padding: 56px 0; }
+}

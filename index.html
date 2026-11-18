@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali EL MAGRI — Réseaux & Cybersécurité</title>
+  <meta name="description" content="Portfolio d'Ali EL MAGRI, étudiant en BUT3 Réseaux et Télécommunications parcours Cybersécurité, alternant IT chez Nestlé Purina, certifié Stormshield CSNA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">Ali EL MAGRI</a>
+    <nav aria-label="Navigation principale">
+      <a href="#experiences">Expériences</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Ali<br>EL MAGRI</h1>
+        <p class="role">Étudiant en BUT Réseaux et Télécommunications, parcours Cybersécurité, alternant IT chez Nestlé Purina.</p>
+        <p class="pitch">Je sécurise des infrastructures réseau, de la PKI au Wi-Fi d'entreprise en EAP-TLS, puis je vérifie chaque protection par des tests d'intrusion. Certifié Stormshield CSNA et dans le top 3 de ma promotion sur Root-Me, je prépare un cycle ingénieur ou un master en cybersécurité pour la rentrée 2027.</p>
+        <div class="buttons">
+          <a class="btn primary" href="docs/CV_Ali_EL_MAGRI.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+          <a class="btn" href="#projets">Voir les projets</a>
+        </div>
+      </div>
+
+      <figure>
+        <svg class="topo" viewBox="0 0 560 400" role="img" aria-label="Parcours : BUT R&T à l'IUT d'Auxerre, stage chez HMY Group, alternance chez Nestlé Purina, puis cycle ingénieur ou master en 2027">
+          <path class="link draw" d="M250 90 H 310 V 150" />
+          <path class="link draw d2" d="M310 230 V 255 H 135 V 280" />
+          <path class="link pending draw d3" d="M250 320 H 330" />
+
+          <g class="node" transform="translate(20,50)">
+            <rect width="230" height="80" rx="6"/>
+            <circle class="led" cx="212" cy="18" r="7" fill="#2BA24C"/>
+            <text class="t1" x="18" y="34">IUT d'Auxerre</text>
+            <text class="t2" x="18" y="56">BUT R&amp;T Cyber, 2024–2027</text>
+          </g>
+          <g class="node" transform="translate(200,150)">
+            <rect width="220" height="80" rx="6"/>
+            <circle class="led" cx="202" cy="18" r="7" fill="#2BA24C"/>
+            <text class="t1" x="18" y="34">HMY Group</text>
+            <text class="t2" x="18" y="56">Stage, audit Wi-Fi, 2026</text>
+          </g>
+          <g class="node" transform="translate(20,280)">
+            <rect width="230" height="80" rx="6"/>
+            <circle class="led" cx="212" cy="18" r="7" fill="#2BA24C"/>
+            <text class="t1" x="18" y="34">Nestlé Purina</text>
+            <text class="t2" x="18" y="56">Alternance IT, 2026–2027</text>
+          </g>
+          <g class="node next" transform="translate(330,280)">
+            <rect width="210" height="80" rx="6"/>
+            <circle class="led" cx="192" cy="18" r="7" fill="#E3A008"/>
+            <text class="t1" x="18" y="34">Bac+5 cyber</text>
+            <text class="t2" x="18" y="56">Rentrée 2027</text>
+          </g>
+        </svg>
+        <figcaption class="topo-caption">Mon parcours, dessiné comme un schéma réseau.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="experiences" class="block">
+    <div class="wrap">
+      <h2>Expériences</h2>
+      <p class="lead">Deux sites industriels, deux façons de travailler : un audit en autonomie, puis l'exploitation d'un réseau piloté par un siège.</p>
+
+      <div class="row">
+        <div>
+          <h3>Alternant IT, Nestlé Purina</h3>
+          <p class="meta">Usine de Montfort-sur-Risle (27)<br>Septembre 2026 à août 2027</p>
+        </div>
+        <ul>
+          <li>Cartographie de la couverture Wi-Fi de l'usine par relevés de puissance sur le terrain, reportés sur le plan AutoCAD du site.</li>
+          <li>Inventaire des ports et VLAN des baies, schémas réseau, demandes de configuration au siège par tickets.</li>
+          <li>Mise en service de caméras de ligne de production et de badgeuses, rotation hebdomadaire des sauvegardes hors site.</li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <div>
+          <h3>Stage technicien informatique, HMY Group</h3>
+          <p class="meta">Monéteau (89)<br>Janvier à mars 2026</p>
+        </div>
+        <ul>
+          <li>Audit de 55 bornes Wi-Fi Cisco Meraki en production : couverture, sécurité, vulnérabilités et préconisations.</li>
+          <li>Segmentation en VLAN, ACL et authentification RADIUS sur les switchs de cœur et d'accès.</li>
+          <li>Support N1/N2 en milieu industriel, maquettes en laboratoire, procédures de sauvegarde Veeam.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets" class="block">
+    <div class="wrap">
+      <h2>Projets cybersécurité</h2>
+      <p class="lead">Réalisés pendant le BUT, du plus récent au plus ancien. Le voyant vert indique un projet terminé, l'orange un projet en cours.</p>
+
+      <div class="row">
+        <div>
+          <h3>Wi-Fi d'entreprise par certificats</h3>
+          <p class="meta">SAÉ 501, 2026</p>
+          <span class="status wip">En cours, dossier début 2027</span>
+        </div>
+        <div>
+          <p>Accès Wi-Fi authentifié par certificat, sans mot de passe, avec révocation des terminaux compromis.</p>
+          <ul style="margin-top:10px">
+            <li>PKI à deux niveaux sous OpenSSL : autorité racine, autorité intermédiaire, liste de révocation.</li>
+            <li>FreeRADIUS en EAP-TLS, tests d'accès accepté et refusé analysés sous Wireshark.</li>
+            <li>Scénarios d'attaque ajoutés au sujet : point d'accès pirate, certificat révoqué ou falsifié.</li>
+          </ul>
+          <p class="tools"><b>Outils :</b> OpenSSL, FreeRADIUS, 802.1X, Debian, Wireshark</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <h3>Sécurisation et supervision d'un SI</h3>
+          <p class="meta">SAÉ 503, en binôme, 2026</p>
+          <span class="status wip">En cours, dossier début 2027</span>
+        </div>
+        <div>
+          <p>Conception du système d'information sécurisé d'une entreprise fictive, en suivant le guide de l'ANSSI sur l'interconnexion d'un SI à Internet : annuaire Active Directory, pare-feu Stormshield, DMZ, supervision Wazuh et détection d'intrusion Suricata.</p>
+          <p class="tools"><b>Outils :</b> AD DS, Stormshield, Wazuh, Suricata</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <h3>Audit offensif et durcissement d'un SI multi-zones</h3>
+          <p class="meta">SAÉ 401, en binôme, 2026</p>
+          <span class="status">Terminé</span>
+        </div>
+        <div>
+          <p>Sécurisation complète d'une agence (LAN, DMZ, backbone), puis vérification de chaque mesure par une attaque réelle. J'ai pris en charge l'environnement Windows.</p>
+          <ul style="margin-top:10px">
+            <li>Pare-feu Stormshield SN320 ; switch Cisco : Port-Security, Storm-Control, DHCP Snooping, ACL anti-usurpation.</li>
+            <li>Active Directory, DNS, DHCP, AD CS et LDAPS ; PKI, HTTPS, SSH par clé, SMTPS et SFTP sous Linux.</li>
+            <li>Tests d'intrusion : Nmap, SYN flood, Responder, Hydra, Yersinia, Metasploit ; supervision Wazuh.</li>
+          </ul>
+          <a class="doc" href="docs/rapport-sae401.pdf" target="_blank" rel="noopener">Lire le dossier technique (PDF, 41 pages)</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <h3>CTF et forensic sur Root-Me Pro</h3>
+          <p class="meta">SAÉ</p>
+          <span class="status">Terminé</span>
+        </div>
+        <div>
+          <p>320 points, top 3 de la promotion. Forensic de journaux Apache, détection d'AS-REP Roasting (événement 4768), analyse de rapports Active Directory et de captures PCAP.</p>
+          <p class="doc"><a href="docs/rapport-rootme.pdf" target="_blank" rel="noopener">Rapport (PDF)</a> &nbsp; <a href="docs/presentation-rootme.pdf" target="_blank" rel="noopener">Présentation (PDF)</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <h3>Injections SQL et XSS</h3>
+          <p class="meta">SAÉ, laboratoire DVWA</p>
+          <span class="status">Terminé</span>
+        </div>
+        <div>
+          <p>Exploitation de failles web au niveau de difficulté le plus élevé dans un laboratoire isolé, puis remédiation : injection SQL UNION, cassage d'empreintes MD5, XSS stockée, interception de requêtes avec Burp Suite.</p>
+          <a class="doc" href="docs/rapport-sqli-xss.pdf" target="_blank" rel="noopener">Rapport (PDF)</a>
+        </div>
+      </div>
+
+      <h2 class="sub">Projets réseaux et systèmes</h2>
+      <p class="lead">Projets de première et deuxième année.</p>
+      <div class="compact">
+        <div class="row">
+          <h3>Infrastructure multi-sites d'un parc éolien</h3>
+          <p>5 routeurs, 11 switchs Cisco, 5 serveurs et 12 VLAN ; Active Directory, profils itinérants et partages réseau. <a href="docs/parc-eolien.pdf" target="_blank" rel="noopener">Dossier (PDF)</a></p>
+        </div>
+        <div class="row">
+          <h3>Réseau d'une LAN party</h3>
+          <p>Infrastructure pour plus de 250 postes : VLAN, switchs administrables, routage inter-VLAN, câblage et budget. <a href="docs/lan-party.pdf" target="_blank" rel="noopener">Dossier (PDF)</a></p>
+        </div>
+        <div class="row">
+          <h3>Scanner de vulnérabilités réseau</h3>
+          <p>Application web PHP pilotant Nmap (hôtes, services, systèmes), sessions sécurisées et export CSV. <a href="docs/scanner-nmap.pdf" target="_blank" rel="noopener">Présentation (PDF)</a></p>
+        </div>
+        <div class="row">
+          <h3>Serveurs DNS et messagerie</h3>
+          <p>Zones primaire et secondaire avec DNSSEC ; Postfix et Dovecot avec chiffrement TLS, quotas et antispam. <a href="docs/configuration-dns.md" target="_blank" rel="noopener">Configuration DNS</a>, <a href="docs/configuration-messagerie.md" target="_blank" rel="noopener">configuration messagerie</a></p>
+        </div>
+        <div class="row">
+          <h3>Application météo en Python</h3>
+          <p>Interface Tkinter et graphiques Matplotlib à partir de données publiques. <a href="https://github.com/Elmagriali/sae_105" target="_blank" rel="noopener">Code sur GitHub</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competences" class="block">
+    <div class="wrap">
+      <h2>Compétences</h2>
+      <p class="lead">Les outils que j'ai réellement mis en œuvre en projet ou en entreprise.</p>
+      <div class="skills">
+        <dl><dt>Réseaux</dt><dd>Cisco IOS, Meraki, VLAN et ACL, routage, 802.1X et RADIUS, Wi-Fi d'entreprise</dd></dl>
+        <dl><dt>Sécurité défensive</dt><dd>Stormshield SNS, PKI et OpenSSL, Wazuh, Splunk, Suricata, Syslog</dd></dl>
+        <dl><dt>Sécurité offensive</dt><dd>Kali Linux, Nmap, Metasploit, Burp Suite, Hydra, Responder</dd></dl>
+        <dl><dt>Systèmes et scripts</dt><dd>Windows Server (AD DS, AD CS, GPO), Debian, Ubuntu, Python, PowerShell, Bash</dd></dl>
+      </div>
+
+      <h2 class="sub">Certifications</h2>
+      <div class="cert-top">
+        <h3>Stormshield CSNA</h3>
+        <p>Certified Stormshield Network Administrator, obtenue en 2026 : configuration et administration des pare-feu Stormshield SNS.</p>
+      </div>
+      <ul class="cert-list">
+        <li>Cisco CCNA : 3 modules sur 3 (ITN, SRWE, ENSA)</li>
+        <li>Cisco Network Technician</li>
+        <li>Cisco Industrial Networking Essentials</li>
+        <li>ANSSI SecNumacadémie</li>
+        <li>Google Foundations of Cybersecurity</li>
+        <li>Cisco Introduction to Cybersecurity</li>
+        <li>NVIDIA Introduction to Networking</li>
+        <li>NVIDIA Ansible for Network Engineers</li>
+        <li>Cisco Introduction to Modern AI</li>
+        <li>Cisco Introduction to IoT</li>
+      </ul>
+
+      <h2 class="sub">Formation</h2>
+      <div class="compact">
+        <div class="row">
+          <h3>BUT Réseaux et Télécommunications, parcours Cybersécurité</h3>
+          <p>IUT d'Auxerre, Université de Bourgogne, 2024 à 2027. Troisième année en alternance.</p>
+        </div>
+        <div class="row">
+          <h3>Baccalauréat général</h3>
+          <p>Spécialités mathématiques et physique-chimie, lycée Fourier d'Auxerre, 2024.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Je cherche un cycle ingénieur ou un master en cybersécurité, en alternance ou en formation initiale, pour la rentrée 2027. Mobile dans toute la France.</p>
+      <a class="mail" href="mailto:elmagri.ali@gmail.com">elmagri.ali@gmail.com</a>
+      <div class="buttons">
+        <a class="btn" href="https://www.linkedin.com/in/ali-el-magri/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/Elmagriali" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Ali EL MAGRI</div>
+</footer>
+
+</body>
+</html>
