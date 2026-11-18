@@ -1,0 +1,12 @@
+Ajoute dans ce dossier, avec exactement ces noms :
+CV_Ali_EL_MAGRI.pdf            <- export PDF de CV_Ali_EL_MAGRI_version_site.docx
+rapport-rootme.pdf             <- ancien rapport_rootme.pdf
+presentation-rootme.pdf        <- ancien "Root me présentation.pdf"
+rapport-sqli-xss.pdf           <- ancien rapport_projet_sql_xss.pdf
+parc-eolien.pdf                <- ancien par_eolien_pdf.pdf
+lan-party.pdf                  <- ancien lan_party.pdf
+scanner-nmap.pdf               <- ancien projet_pdf.pdf
+configuration-dns.md           <- ancien Configuration_DNS.md
+configuration-messagerie.md    <- ancien Configuration_Messagerie.md
+(rapport-sae401.pdf est déjà inclus)
+Supprime ce fichier avant de l'envoyer sur GitHub.
