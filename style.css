@@ -95,6 +95,8 @@ h2 { font-family: var(--head); font-weight: 600; font-size: 40px; letter-spacing
 .cert-list { columns: 2; column-gap: 56px; padding: 20px 0 0 18px; border-top: 1px solid var(--line); }
 .cert-list li { margin-bottom: 8px; break-inside: avoid; }
 .cert-list li::marker { color: var(--cable); }
+.cert-list a { color: var(--ink); text-decoration-color: var(--line); }
+.cert-list a:hover { color: var(--cable); text-decoration-color: var(--cable); }
 
 /* Contact */
 .contact { padding: 88px 0; background: var(--surface); }
