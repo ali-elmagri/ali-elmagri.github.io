@@ -136,5 +136,5 @@ systemctl restart bind9
 Tests de résolution :
 
 dig @127.0.0.1 www.linnormandie.fr
-dig @127.0.0.1 antoinepernot.frr
+dig @127.0.0.1 antoinepernot.fr
 
